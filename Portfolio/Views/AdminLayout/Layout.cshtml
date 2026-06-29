@@ -1,5 +1,5 @@
-﻿@{
-    Layout = null;
+﻿﻿@{
+Layout = null;
 }
 
 
@@ -14,6 +14,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
+  
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+   
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
     <script id="tailwind-config">
         tailwind.config = {
         darkMode: "class",
@@ -99,16 +104,16 @@
         "display-lg": ["Inter"]
         },
         "fontSize": {
-        "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
-        "h1": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
-        "h3": ["18px", { "lineHeight": "28px", "fontWeight": "600" }],
-        "label-md": ["14px", { "lineHeight": "20px", "fontWeight": "500" }],
-        "h1-mobile": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
-        "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" }],
-        "h2": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
-        "display-sm": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
-        "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
-        "display-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }]
+        "body-md": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+        "h1": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+        "h3": ["18px", {"lineHeight": "28px", "fontWeight": "600"}],
+        "label-md": ["14px", {"lineHeight": "20px", "fontWeight": "500"}],
+        "h1-mobile": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+        "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+        "h2": ["20px", {"lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+        "display-sm": ["30px", {"lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+        "body-lg": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+        "display-lg": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700"}]
         }
         },
         },
@@ -203,11 +208,14 @@
     <!-- Main Content Area -->
     <main class="ml-[260px] pt-16 min-h-screen p-lg">
         <!-- Page Title & Stats -->
-        <div class="mb-xl">
-            <h1 class="font-h1 text-h1 text-on-surface mb-lg">@ViewData["Title"]</h1>
-        </div>
-        <div class="grid grid-cols-12 gap-lg items-start">
+        
+        <div class="container">
+            <div class="mb-xl">
+                <h1 class="font-h1 text-h1 text-on-surface mb-lg">@ViewData["Title"]</h1>
+
+            </div>
             @RenderBody()
+           
         </div>
     </main>
     <script>
@@ -232,12 +240,3 @@
     </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
